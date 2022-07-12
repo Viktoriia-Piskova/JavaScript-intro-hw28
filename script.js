@@ -6,7 +6,7 @@ document.getElementById("circleRadiusButton").addEventListener("click", circleAr
 
 function circleAreaFormula() {
     let formData = document.querySelector("#circleRadiusInput").value;
-    countedCircleArea = parseInt(formData) * 3.14
+    let countedCircleArea = parseInt(formData) * 3.14;
     document.querySelector('#circleRadiusResult').innerHTML = countedCircleArea;
 };
 
