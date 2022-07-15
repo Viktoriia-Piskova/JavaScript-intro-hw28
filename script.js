@@ -19,7 +19,7 @@ function circleAreaFormula() {
         document.querySelector('#circleRadiusResult').innerHTML = `<p style="color: red;"> ${countedCircleArea} square meters!</p>`;
     }
     else {
-        document.querySelector('#circleRadiusResult').innerHTML = "Cannot count :( Please, enter valid number > 0";
+        document.querySelector('#circleRadiusResult').innerHTML = "<p>Can't count :( Please, enter valid number > 0</p>";
     }
 };
 
@@ -62,6 +62,8 @@ function countEuro() {
 
 }
 
+//script for pseudo scale luxury meter
+
 document.querySelector("#countUserDollars").addEventListener("click", wealthLevel);
 
 function wealthLevel(){
@@ -69,6 +71,7 @@ function wealthLevel(){
     if (userDollarInput <= 100 && userDollarInput > 0){
         let percentWidth = 100 - userDollarInput;
         document.querySelector("#pointer").style.width =  `${percentWidth}%`;
+        document.querySelector("#container").style.backgroundColor = "#06851c"
         
     }
     else if(userDollarInput <= 0){
@@ -76,8 +79,9 @@ function wealthLevel(){
     }
     else{
         
-        // document.getElementById("luxuryRange").innerHTML = "<p>No way! You must be kidding me</p>";
-        document.querySelector("#pointer").style.width = "0%";
+        document.querySelector("#pointer").style.width = "68%";
+        
+
 
     }
 
