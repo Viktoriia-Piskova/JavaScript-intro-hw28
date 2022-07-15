@@ -1,10 +1,19 @@
 * {
   box-sizing: border-box;
+  text-align: center;
 }
 
 body {
 }
 
+section{
+    box-shadow: 0px 5px 5px rgb(75 93 104 / 10%);
+    margin: 20px auto;
+    border-radius: 50px;
+    border: solid #9b69e247 3px;
+    padding: 20px;
+
+}
 .wrapper {
   width: 80vw;
   margin: auto;
@@ -17,14 +26,18 @@ h1 {
   font-weight: 700;
   font-size: 40px;
   line-height: 130%;
+  color: #F063B8;
+  text-align: center;
 }
 
 h2{
-    font-family: "Montserrat", sans-serif;
-
-    font-weight: 700;
-font-size: 40px;
+font-family: "Montserrat", sans-serif;
+font-weight: 700;
+font-size: 30px;
 line-height: 130%;
+text-align: center;
+color: #9C69E2;
+
 }
 
 .question{
@@ -35,16 +48,17 @@ line-height: 130%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 20px auto;
 }
 
 .answer{
-    background: #F0FAF9;
+background: #F0FAF9;
 border-radius: 50px;
 padding: 30px;
 }
 
 .answer p{
-    font-size: larger;
+    font-size: 30px;
     font-weight: 700;
     color: darkgreen;
 }
@@ -61,7 +75,7 @@ button {
   width: 200px;
   height: 60px;
 
-  background: #9c69e2;
+  background: #e269ac;
   border: 1px solid #9c69e2;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
   border-radius: 10px;
@@ -90,6 +104,7 @@ margin: 10px;
   border: solid black 2px;
   background: #F063B8;
   overflow: hidden;
+  margin: 40px auto;
 }
 
 .pointer {
@@ -97,4 +112,9 @@ margin: 10px;
   background-color: white;
   height: 100%;
   width: 50%;
+}
+
+
+#circleRadiusResult{
+ font-size: 40px;
 }

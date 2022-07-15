@@ -16,7 +16,7 @@ function circleAreaFormula() {
     let formData = parseFloat(document.querySelector("#circleRadiusInput").value);
     if (formData > 0) {
         let countedCircleArea = formData ** 2 * 3.14;
-        document.querySelector('#circleRadiusResult').innerHTML = `<p> ${countedCircleArea} square meters! It's very much </p>`;
+        document.querySelector('#circleRadiusResult').innerHTML = `<p style="color: red;"> ${countedCircleArea} square meters!</p>`;
     }
     else {
         document.querySelector('#circleRadiusResult').innerHTML = "Cannot count :( Please, enter valid number > 0";
@@ -51,7 +51,7 @@ function countEuro() {
     let userDollarInput = parseFloat(document.querySelector("#userDollarInput").value);
     if (userDollarInput > 0) {
         let countedEuros = userDollarInput * 0.99;
-        document.querySelector("#summInEuro").innerHTML = `<p>You've got ${countedEuros} euro!</p>`;
+        document.querySelector("#summInEuro").innerHTML = `<p style="color: red;">You've got ${countedEuros} euro!</p>`;
     }
     else if (userDollarInput == 0) {
         document.querySelector("#summInEuro").innerHTML = "<p>Oh... Go and earn at least 1 dollar</p>";
